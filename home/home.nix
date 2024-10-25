@@ -67,6 +67,12 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+
+    vesktop
+    easyeffects
+    helvum
+    mullvad-vpn
+    transmission
   ];
 
   # basic configuration of git, please change to your own
@@ -74,6 +80,15 @@
     enable = true;
     userName = "D1zzl3D0p";
     userEmail = "spn1kolat3sla@gmail.com";
+  };
+
+  programs.gh = {
+    enable = true;
+    gitCredentialHelper.enable = true;
+    settings = {
+      git_protocol = "https";
+      prompt = "enabled";
+    };
   };
 
   programs.zsh = {
