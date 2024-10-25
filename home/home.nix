@@ -87,7 +87,7 @@
     # set some aliases, feel free to add more or remove some
     shellAliases = {
       nixos-dir = "cd $HOME/.nixos";
-      update = "nixos-dir && nix flake update && nix-rebuild switch --flake .";
+      update = "nixos-dir && sudo nix flake update && sudo nixos-rebuild switch --flake .";
     };
   };
 

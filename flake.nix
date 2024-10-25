@@ -8,8 +8,8 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # import cosmic-desktop
-    #nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
-    #nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
+    nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+    nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager/*, nixos-cosmic*/, ... }@inputs: {
@@ -28,6 +28,8 @@
 	# nixos-cosmic.nixosModules.default
 
       	./configuration.nix
+	./desktops/default.nix
+	./packages/default.nix
 	#./desktops/cosmic.nix
 
 	# get home-manager to work

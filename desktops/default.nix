@@ -5,7 +5,6 @@
   imports = 
     [
       ./gnome.nix
-      ./cosmic.nix
     ];
 
   # enable sound with pipewire
@@ -17,5 +16,8 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
+  # enable xdg desktop portals
+  xdg.portal.enable = true;
 
 }
