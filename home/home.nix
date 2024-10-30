@@ -69,10 +69,13 @@
     usbutils # lsusb
 
     vesktop
+    ffmpeg
     easyeffects
     helvum
     mullvad-vpn
     transmission
+    brave
+    r2modman
   ];
 
   # basic configuration of git, please change to your own
