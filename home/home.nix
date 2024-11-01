@@ -68,14 +68,18 @@
     pciutils # lspci
     usbutils # lsusb
 
-    vesktop
-    ffmpeg
-    easyeffects
-    helvum
-    mullvad-vpn
-    transmission
-    brave
-    r2modman
+    vesktop # discord client
+    easyeffects # voice/audio effects 
+    helvum # pipewire patching software
+    faudio # better xaudio, fixes things for helldivers
+    ffmpeg # cli tool for audio/video
+
+    brave # my favorite chromium based browser
+    mullvad-vpn # my choice of vpn
+    transmission_4 # bit torrenting
+
+    r2modman # modding for unity
+    lumafly # modding for hollow knight
   ];
 
   # basic configuration of git, please change to your own
