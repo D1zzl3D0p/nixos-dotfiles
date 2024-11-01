@@ -80,6 +80,10 @@
 
     r2modman # modding for unity
     lumafly # modding for hollow knight
+
+    # languages
+    R
+    python3
   ];
 
   # basic configuration of git, please change to your own
