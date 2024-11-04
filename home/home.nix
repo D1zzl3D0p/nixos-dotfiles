@@ -76,10 +76,11 @@
 
     brave # my favorite chromium based browser
     mullvad-vpn # my choice of vpn
-    transmission_4 # bit torrenting
+    transmission_4-gtk # bit torrenting
 
     r2modman # modding for unity
     lumafly # modding for hollow knight
+    archipelago # randomization/multiplayer modding
 
     # languages
     R
