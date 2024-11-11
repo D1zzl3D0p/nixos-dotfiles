@@ -27,7 +27,7 @@
 	# actually calling cosmic desktop
 	# nixos-cosmic.nixosModules.default
 
-      	./configuration.nix
+      	./hosts/regice.nix
 	./desktops/default.nix
 	./packages/default.nix
 	#./desktops/cosmic.nix

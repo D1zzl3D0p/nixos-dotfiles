@@ -149,6 +149,13 @@
   # Enabling flatpaks
   services.flatpak.enable = true;
 
+  #enable appimages
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+
+
   services.mullvad-vpn.enable = true;
 
   hardware.steam-hardware.enable = true;
