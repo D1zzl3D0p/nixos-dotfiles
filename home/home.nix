@@ -33,6 +33,9 @@
 
     neofetch
     nnn # terminal file manager
+    wineWowPackages.stable
+    winetricks
+    dotnet-runtime
 
     # archives
     zip
