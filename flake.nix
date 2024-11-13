@@ -11,9 +11,10 @@
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
 
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixos-cosmic, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nixos-cosmic, hyprland, ... }@inputs: {
     nixosConfigurations.regice = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -21,20 +22,28 @@
 	{
 	  nix.settings = {
 	    # importing the cachix cosmic thing
-	    substituters = [ "https://cosmic.cachix.org/" ];
-	    trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+	    substituters = [ 
+	    	"https://hyprland.cachix.org"
+	    	"https://cosmic.cachix.org/" 
+		"https://cache.nixos.org/" 
+		"https://nix-community.cachix.org"
+	    ];
+	    trusted-public-keys = [ 
+	    	"cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" 
+	    	"hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
+      		"cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      		"nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+	    ];
 	  };
 	}
 
-      	./hosts/regice.nix
-	./desktops/default.nix
-	./packages/default.nix
+      	./hosts/regice
 
 	nixos-cosmic.nixosModules.default
 	home-manager.nixosModules.home-manager{
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
-	  home-manager.users.dizzler = import ./home/home.nix;
+	  home-manager.users.dizzler = import ./users/dizzler;
 	  #optionally use home-manager.extraSpecialArgs to pass args to home.nix
 	  }
       ];

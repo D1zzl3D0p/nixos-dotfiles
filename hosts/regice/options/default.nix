@@ -5,6 +5,8 @@
   imports = 
     [
       ./gnome.nix
+      ./steam.nix
+      ./cosmic.nix
     ];
 
   # enable sound with pipewire
@@ -20,4 +22,15 @@
   # enable xdg desktop portals
   xdg.portal.enable = true;
 
+  # get easy effects to work
+  programs.dconf.enable = true;
+
+  # enable services
+  services = {
+    # enable CUPS
+    printing.enable = true;
+    xserver.displayManager.gdm.enable = true;
+    # enable mullvad daemon
+    mullvad-vpn.enable = true;
+  };
 }
