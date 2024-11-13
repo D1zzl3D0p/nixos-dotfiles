@@ -17,6 +17,7 @@
     htop
     iotop # io
     iftop # network
+    tmux
 
     ffmpeg
 
