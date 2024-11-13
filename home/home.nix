@@ -35,7 +35,10 @@
     nnn # terminal file manager
     wineWowPackages.stable
     winetricks
-    dotnet-runtime
+
+    # installing arcane libraries
+    icu
+    dotnet-sdk
 
     # archives
     zip
