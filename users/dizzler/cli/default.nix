@@ -4,6 +4,7 @@
   imports = [
     ./zsh.nix
     ./git.nix
+    ./kitty.nix
   ];
 
   home.packages = with pkgs; [
@@ -12,6 +13,7 @@
     fzf
     # provides nom, which works like nix, but with better logs
     nix-output-monitor 
+    nh
 
     # monitoring
     htop
