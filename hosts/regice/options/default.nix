@@ -32,5 +32,6 @@
     xserver.displayManager.gdm.enable = true;
     # enable mullvad daemon
     mullvad-vpn.enable = true;
+    tailscale.enable = true;
   };
 }
