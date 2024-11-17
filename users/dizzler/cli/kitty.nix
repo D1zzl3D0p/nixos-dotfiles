@@ -4,6 +4,7 @@
   programs.kitty = {
     enable = true;
     font.package = pkgs.fira-code;
-    theme = "GruvboxMaterialDarkMedium";
+    font.name = "Fira Code";
+    themeFile = "GruvboxMaterialDarkMedium";
   };
 }

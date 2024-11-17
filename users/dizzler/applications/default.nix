@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -9,5 +9,9 @@
     ./web.nix
     ./audio-visual.nix
     ./virt.nix
+  ];
+  home.packages = [
+    pkgs.libreoffice
+    pkgs.wl-clipboard
   ];
 }
