@@ -13,5 +13,6 @@
   home.packages = [
     pkgs.libreoffice
     pkgs.wl-clipboard
+    pkgs.filelight
   ];
 }

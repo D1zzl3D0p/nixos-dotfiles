@@ -10,7 +10,7 @@
     };
     shellAliases = {
       nixos-dir = "cd $HOME/.nixos";
-      update = "nixos-dir && sudo flake update && sudo nixos-rebuild switch --flake .";
+      update = "nixos-dir && sudo nix flake update && sudo nixos-rebuild switch --flake .";
     };
   };
 }
