@@ -14,5 +14,6 @@
     pkgs.libreoffice
     pkgs.wl-clipboard
     pkgs.filelight
+    pkgs.obsidian
   ];
 }
