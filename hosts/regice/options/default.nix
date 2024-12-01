@@ -35,11 +35,20 @@
     tailscale.enable = true;
   };
 
-  programs.appimage = {
-    enable = true;
-    binfmt = true;
+  programs = {
+    # nixos docs say to do this to enable appimages
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
+    # Enable android usb debugging soes I can use my deskthing
+    adb.enable = true;
   };
+
+  # Add my user to the adbusers group to do the actual adb things
+  users.users.dizzler.extraGroups = ["adbusers"];
   
+  # actually need to do this to run appimages
   environment.systemPackages = with pkgs; [
     appimage-run
   ];
