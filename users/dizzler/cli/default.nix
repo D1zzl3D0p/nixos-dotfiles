@@ -22,6 +22,7 @@
     tmux
 
     ffmpeg
+    yt-dlp
 
     R
     python3
