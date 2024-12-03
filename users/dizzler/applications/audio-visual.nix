@@ -5,5 +5,6 @@
     easyeffects
     helvum
     spotifywm
+    obs-studio
   ];
 }
