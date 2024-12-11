@@ -14,7 +14,7 @@
   environment.systemPackages = with pkgs; [
     # random libraries for various games
     icu
-    dotnet-sdk # never been able to get this to work
+    # dotnet-sdk # never been able to get this to work
     faudio # helps with audio glitching in helldivers 2
 
     # wine
