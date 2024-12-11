@@ -6,7 +6,7 @@
     firefox
 
     mullvad-vpn
-    tailscale
+    # tailscale
 
     transmission_4-gtk
 
