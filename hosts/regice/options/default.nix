@@ -7,6 +7,7 @@
       ./gnome.nix
       ./steam.nix
       ./cosmic.nix
+      ./temp.nix
     ];
 
   # enable sound with pipewire
