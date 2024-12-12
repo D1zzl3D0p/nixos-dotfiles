@@ -15,5 +15,6 @@
     pkgs.wl-clipboard
     pkgs.filelight
     pkgs.obsidian
+    pkgs.gparted
   ];
 }
