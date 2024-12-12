@@ -17,6 +17,10 @@
     { device = "/dev/disk/by-uuid/e86e0b2c-df65-4d22-8aeb-8d3522af8eb6";
       fsType = "ext4";
     };
+  fileSystems."/home/dizzler/Steam" = {
+    device = "/dev/disk/by-uuid/3d5a861e-a123-4da3-af4b-4b00d88684fa";
+    fsType = "ext4";
+  };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/b0855559-7185-4c04-92f8-1e863783ec4e"; }
