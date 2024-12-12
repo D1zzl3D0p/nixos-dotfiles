@@ -20,6 +20,7 @@
   fileSystems."/home/dizzler/Steam" = {
     device = "/dev/disk/by-uuid/3d5a861e-a123-4da3-af4b-4b00d88684fa";
     fsType = "ext4";
+    options = [ "uid=1000" "gid=1000" "umask=000" ];
   };
 
   swapDevices =
