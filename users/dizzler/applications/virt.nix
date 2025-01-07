@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    quickemu
+    # quickemu
     # quickgui
   ];
 }

@@ -17,10 +17,10 @@
     { device = "/dev/disk/by-uuid/e86e0b2c-df65-4d22-8aeb-8d3522af8eb6";
       fsType = "ext4";
     };
-  fileSystems."/home/dizzler/Steam" = {
+  fileSystems."/home/dizzler/.nvme" = {
     device = "/dev/disk/by-uuid/3d5a861e-a123-4da3-af4b-4b00d88684fa";
     fsType = "ext4";
-    options = [ "uid=1000" "gid=1000" "umask=000" ];
+    # options = [ "umask=000" ];
   };
 
   swapDevices =

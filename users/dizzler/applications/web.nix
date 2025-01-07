@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     brave
     firefox
+    chromium
 
     mullvad-vpn
     # tailscale
