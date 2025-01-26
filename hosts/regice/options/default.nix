@@ -8,6 +8,7 @@
       ./steam.nix
       ./cosmic.nix
       ./temp.nix
+      ./virt.nix
     ];
 
   # enable sound with pipewire

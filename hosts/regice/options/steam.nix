@@ -20,5 +20,6 @@
     # wine
     wineWowPackages.stable
     winetricks
+    protonplus
   ];
 }
