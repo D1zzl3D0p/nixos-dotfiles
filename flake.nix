@@ -12,6 +12,11 @@
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
 
     hyprland.url = "github:hyprwm/Hyprland";
+
+    hydenix-nixpkgs.url = "github:nixos/nixpkgs/ecd26a469ac56357fd333946a99086e992452b6a";
+
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "hydenix-nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager, nixos-cosmic, hyprland, ... }@inputs: {

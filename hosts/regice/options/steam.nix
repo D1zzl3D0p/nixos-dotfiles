@@ -3,10 +3,11 @@
 {
   hardware = {
     steam-hardware.enable = true;
-    pulseaudio.support32Bit = true;
     graphics.enable32Bit = true;
     graphics.enable = true;
   };
+
+  services.pulseaudio.support32Bit = true;
 
   programs.gamescope.enable = true;
   programs.steam.enable = true;
